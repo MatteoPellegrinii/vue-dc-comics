@@ -1,8 +1,50 @@
 <template>
 <div>
     <div class="container">
-        <div class="list"></div>
-        <div class="logo"></div>
+        <div class="list">
+            <ul>
+                <li>
+                    <h5>DC COMICS</h5>
+                </li>
+                <li><a href="#">Characters</a></li>
+                <li><a href="#">Characters</a></li>
+                <li><a href="#">Characters</a></li>
+                <li><a href="#">Characters</a></li>
+                <li><a href="#">Characters</a></li>
+                <li><a href="#">Characters</a></li>
+                <li><a href="#">Characters</a></li>
+                <li>
+                    <h5 class="secondtitle">SHOP</h5>
+                </li>
+                <li><a href="#">Characters</a></li>
+                <li><a href="#">Characters</a></li>
+                
+            </ul>
+            <ul>
+                <li>
+                    <h5>DC</h5>
+                </li>
+                <li><a href="#">Characters</a></li>
+                <li><a href="#">Characters</a></li>
+                <li><a href="#">Characters</a></li>
+                <li><a href="#">Characters</a></li>
+                <li><a href="#">Characters</a></li>
+                <li><a href="#">Characters</a></li>
+                <li><a href="#">Characters</a></li>
+            </ul>
+            <ul>
+                <li>
+                    <h5>SITES</h5>
+                </li>
+                <li><a href="#">Characters</a></li>
+                <li><a href="#">Characters</a></li>
+                <li><a href="#">Characters</a></li>
+                <li><a href="#">Characters</a></li>
+            </ul>
+        </div>
+            
+        <div class="logo">
+        </div>
     </div>
     <div class="lastfoot"></div>
 </div>
@@ -26,6 +68,24 @@ export default {
 }
 .list{
     width: 40%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    li{
+        list-style: none;
+        margin: 0 10px;
+        a{
+            text-decoration: none;
+            color: gray;
+            font-size: 10px;
+            &:hover{
+            color: blue;
+        }
+            
+        }
+        
+    }
 }
 .logo{
     width: 60%;
@@ -37,8 +97,11 @@ export default {
 }
 .lastfoot{
     width: 100%;
-    background-color: gray;
+    background-color: #303030;
     height: 100px;
+}
+.secondtitle{
+    margin-top: 10px;
 }
 
 </style>

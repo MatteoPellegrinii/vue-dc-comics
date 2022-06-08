@@ -7,7 +7,7 @@
         <div class="objects">
             <div class="object" v-for="(object, index) in objects" :key="index">
                 <img :src="object.urlimg" alt="">
-                <div class="testomain">{{object.text}} </div>
+                <div class="testomain"><a href="#">{{object.text}}</a> </div>
         </div>
         </div>
         
@@ -27,20 +27,20 @@ export default {
                   text: "DIGITAL COMICS"
               },
               {
-                  urlimg: require("../assets/img/buy-comics-digital-comics.png"),
-                  text: "DIGITAL COMICS"
+                  urlimg: require("../assets/img/buy-comics-merchandise.png"),
+                  text: "DC MERCHANDISE"
               },
               {
-                  urlimg: require("../assets/img/buy-comics-digital-comics.png"),
-                  text: "DIGITAL COMICS"
+                  urlimg: require("../assets/img/buy-comics-subscriptions.png"),
+                  text: "SUBSCRIPTIONS"
               },
               {
-                  urlimg: require("../assets/img/buy-comics-digital-comics.png"),
-                  text: "DIGITAL COMICS"
+                  urlimg: require("../assets/img/buy-comics-shop-locator.png"),
+                  text: "COMIC SHOP LOCATOR"
               },
               {
-                  urlimg: require("../assets/img/buy-comics-digital-comics.png"),
-                  text: "DIGITAL COMICS"
+                  urlimg: require("../assets/img/buy-dc-power-visa.svg"),
+                  text: "POWER VISA"
               }
           ]
       }
@@ -78,6 +78,10 @@ export default {
     justify-content: center;
     align-items: center;
     height: 100%;
+    a{
+        text-decoration: none;
+        color: white;
+    }
     img{
         height: 50%;
     }

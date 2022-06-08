@@ -35,37 +35,37 @@ export default {
                   url: "#" 
               },
               {
-                  text: "CHARACTERS",
+                  text: "TV",
                   current: false,
                   url: "#" 
               },
               {
-                  text: "CHARACTERS",
+                  text: "GAMES",
                   current: false,
                   url: "#" 
               },
               {
-                  text: "CHARACTERS",
+                  text: "SHOP",
                   current: false,
                   url: "#" 
               },
               {
-                  text: "CHARACTERS",
+                  text: "COLLECTIBLES",
                   current: false,
                   url: "#" 
               },
               {
-                  text: "CHARACTERS",
+                  text: "NEWS",
                   current: false,
                   url: "#" 
               },
               {
-                  text: "CHARACTERS",
+                  text: "VIDEOS",
                   current: false,
                   url: "#" 
               },
               {
-                  text: "CHARACTERS",
+                  text: "FANS",
                   current: false,
                   url: "#" 
               }
