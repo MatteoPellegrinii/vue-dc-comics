@@ -1,13 +1,50 @@
 <template>
-<div class="upPart">
+<div>
+    <div class="upPart">
     <h3 class="scritta"> &#8211; &#8211; > Content goes here 	&lt; &#8211; &#8211;</h3>
+    </div>
+    <div class="botPart">
+        <div class="objects">
+            <div class="object" v-for="(object, index) in objects" :key="index">
+                <img :src="object.urlimg" alt="">
+                <div class="testomain">{{object.text}} </div>
+        </div>
+        </div>
+        
+    </div>
 </div>
-<div class="botPart"></div>
+
 </template>
 
 <script>
 export default {
-  name: 'HeaderProject'
+  name: 'MainProject',
+  data() {
+      return{
+          objects: [
+              {
+                  urlimg: require("../assets/img/buy-comics-digital-comics.png") ,
+                  text: "DIGITAL COMICS"
+              },
+              {
+                  urlimg: require("../assets/img/buy-comics-digital-comics.png"),
+                  text: "DIGITAL COMICS"
+              },
+              {
+                  urlimg: require("../assets/img/buy-comics-digital-comics.png"),
+                  text: "DIGITAL COMICS"
+              },
+              {
+                  urlimg: require("../assets/img/buy-comics-digital-comics.png"),
+                  text: "DIGITAL COMICS"
+              },
+              {
+                  urlimg: require("../assets/img/buy-comics-digital-comics.png"),
+                  text: "DIGITAL COMICS"
+              }
+          ]
+      }
+  }
 }
 </script>
 
@@ -32,8 +69,29 @@ export default {
     }
 }
 .botPart{
-    width: 100%;
     height: 100px;
     background-color: #0282f9;
+    display: flex;
+}
+.object{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    img{
+        height: 50%;
+    }
+    .testomain{
+        font-size: 11px;
+        color: white;
+        margin-left: 10px;
+    }
+}
+.objects{
+    width: 90%;
+    margin: auto;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
 }
 </style>

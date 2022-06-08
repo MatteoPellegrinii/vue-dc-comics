@@ -1,7 +1,7 @@
 <template>
 <div class="whiteHeader">
     <div class="logo">
-        <img src="..\img\dc-logo.png" alt="">
+        <img src="./..\assets\img\dc-logo.png" alt="">
     </div>
     <div class="navbar">
         <ul>
