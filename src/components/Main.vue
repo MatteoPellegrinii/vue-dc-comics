@@ -1,13 +1,13 @@
 <template>
 <div>
     <div class="upPart">
-    <h3 class="scritta"> &#8211; &#8211; > Content goes here 	&lt; &#8211; &#8211;</h3>
+    <SlidesProject></SlidesProject>
     </div>
     <div class="botPart">
         <div class="objects">
             <div class="object" v-for="(object, index) in objects" :key="index">
                 <img :src="object.urlimg" alt="">
-                <div class="testomain"><a href="#">{{object.text}}</a> </div>
+                <div class="testomain"><a :href="object.url">{{object.text}}</a> </div>
         </div>
         </div>
         
@@ -17,34 +17,41 @@
 </template>
 
 <script>
+import SlidesProject from './SlidesProject.vue'
 export default {
-  name: 'MainProject',
-  data() {
-      return{
-          objects: [
-              {
-                  urlimg: require("../assets/img/buy-comics-digital-comics.png") ,
-                  text: "DIGITAL COMICS"
-              },
-              {
-                  urlimg: require("../assets/img/buy-comics-merchandise.png"),
-                  text: "DC MERCHANDISE"
-              },
-              {
-                  urlimg: require("../assets/img/buy-comics-subscriptions.png"),
-                  text: "SUBSCRIPTIONS"
-              },
-              {
-                  urlimg: require("../assets/img/buy-comics-shop-locator.png"),
-                  text: "COMIC SHOP LOCATOR"
-              },
-              {
-                  urlimg: require("../assets/img/buy-dc-power-visa.svg"),
-                  text: "POWER VISA"
-              }
-          ]
-      }
-  }
+    name: "MainProject",
+    data() {
+        return {
+            objects: [
+                {
+                    urlimg: require("../assets/img/buy-comics-digital-comics.png"),
+                    url: "#",
+                    text: "DIGITAL COMICS"
+                },
+                {
+                    urlimg: require("../assets/img/buy-comics-merchandise.png"),
+                    url: "#",
+                    text: "DC MERCHANDISE"
+                },
+                {
+                    urlimg: require("../assets/img/buy-comics-subscriptions.png"),
+                    url: "#",
+                    text: "SUBSCRIPTIONS"
+                },
+                {
+                    urlimg: require("../assets/img/buy-comics-shop-locator.png"),
+                    url: "#",
+                    text: "COMIC SHOP LOCATOR"
+                },
+                {
+                    urlimg: require("../assets/img/buy-dc-power-visa.svg"),
+                    url: "#",
+                    text: "POWER VISA"
+                }
+            ]
+        };
+    },
+    components: { SlidesProject }
 }
 </script>
 
@@ -57,7 +64,6 @@ export default {
 .upPart{
     background-color: #1c1c1c;
     width: 100%;
-    height: 100px;
 
     .scritta{
         width: 40%;

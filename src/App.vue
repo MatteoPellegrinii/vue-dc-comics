@@ -17,7 +17,9 @@ export default {
   components: {
     HeaderProject,
     MainProject,
-    Footer
+    Footer,
+
+
 }
 }
 </script>

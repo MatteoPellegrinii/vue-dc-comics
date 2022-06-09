@@ -46,7 +46,10 @@
         <div class="logo">
         </div>
     </div>
-    <div class="lastfoot"></div>
+    <div class="lastfoot">
+        <div class="signup"></div>
+        <div class="social"></div>
+    </div>
 </div>
 
 </template>

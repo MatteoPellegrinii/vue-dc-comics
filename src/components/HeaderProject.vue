@@ -14,6 +14,7 @@
 </template>
 
 <script>
+
 export default {
   name: 'HeaderProject',
   data(){
@@ -103,13 +104,14 @@ export default {
     
     
 }
-.here{
-    border-bottom: solid 2px blue;
-}
 .navbar {
     width: 60%;
     height: 100px;
     font-size: 11px;
+    .here{
+    border-bottom: solid 2px blue;
+    color: blue;
+}
 }
 .logo{
     width: 40%;
