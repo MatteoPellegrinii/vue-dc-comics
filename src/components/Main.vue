@@ -1,7 +1,13 @@
 <template>
 <div>
+    <div class="jumbo">
+        <div class="bottonejumbo"><a href="#">CURRENT SERIES</a></div>
+    </div>
     <div class="upPart">
     <SlidesProject></SlidesProject>
+    <div class="bottone">
+        <a href="#">LOAD MORE</a>
+    </div>
     </div>
     <div class="botPart">
         <div class="objects">
@@ -65,6 +71,7 @@ export default {
     background-color: #1c1c1c;
     width: 100%;
 
+
     .scritta{
         width: 40%;
         height: 100%;
@@ -103,5 +110,39 @@ export default {
     height: 100px;
     display: flex;
     justify-content: space-evenly;
+}
+.bottone {
+    text-align: center;
+    height: 80px;
+    margin-top: 20px;
+
+    a{
+        text-decoration: none;
+        background-color: #0282f9;
+        color: white;
+        padding: 10px 30px;
+    }
+}
+.jumbo{
+    background-image: url(../assets/img/jumbotron.jpg);
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.bottonejumbo{
+    height: 80px;
+    margin-top: 20px;
+    position: absolute;
+    bottom: -75px;
+    left: 100px;
+
+    a{
+        text-decoration: none;
+        background-color: #0282f9;
+        color: white;
+        padding: 10px 30px;
+    }
 }
 </style>

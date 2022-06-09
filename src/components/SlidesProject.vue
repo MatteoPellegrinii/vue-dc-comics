@@ -106,6 +106,7 @@ export default {
     width: 14%;
     height: 200px;
     margin: 10px;
+    cursor: pointer;
         h5, h6{
             color: rgba(255, 255, 255, 0.61);
         }
