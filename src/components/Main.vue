@@ -132,10 +132,9 @@ export default {
     position: relative;
 }
 .bottonejumbo{
-    height: 80px;
     margin-top: 20px;
     position: absolute;
-    bottom: -75px;
+    bottom: 0px;
     left: 100px;
 
     a{

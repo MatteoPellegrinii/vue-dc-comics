@@ -47,8 +47,9 @@
         </div>
     </div>
     <div class="lastfoot">
-        <div class="signup"></div>
-        <div class="social"></div>
+            <div class="bottonefoot"><a href="#">SIGN-UP NOW</a></div>
+            <div class="social"></div>
+
     </div>
 </div>
 
@@ -64,7 +65,7 @@ export default {
 .container {
     background-image: url("../assets/img/footer-bg.jpg");
     width: 100%;
-    height: 400px;
+    height: 300px;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -101,10 +102,24 @@ export default {
 .lastfoot{
     width: 100%;
     background-color: #303030;
-    height: 100px;
+    height: 90px;
 }
 .secondtitle{
     margin-top: 10px;
+}
+.bottonefoot{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a{
+        text-decoration: none;
+        background-color: #0282f9;
+        color: white;
+        padding: 10px 30px;
+    }
 }
 
 </style>
